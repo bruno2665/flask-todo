@@ -1,0 +1,11 @@
+services:
+  todo:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8000:8000"   # nur lokal; Zugriff über Reverse Proxy (nginx/Caddy)
+    volumes:
+      - todo-data:/data
+
+volumes:
+  todo-data:
