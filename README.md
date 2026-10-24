@@ -26,6 +26,7 @@ Umgebungsvariable `TODO_DB` lässt sich ein anderer Pfad setzen.
 
 ```bash
 git clone https://github.com/bruno2665/flask-todo
+cd flask-todo
 docker compose up -d --build
 ```
 
